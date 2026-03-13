@@ -127,22 +127,51 @@ Before submitting, verify:
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
+**Name:** Chilesh Mulenga
+**Student ID:** 2022039904
+**Design Theme:** Modern, clean professional design with blue primary colors and responsive layout featuring Flexbox, CSS Grid, dark mode toggle, and mobile hamburger menu navigation
+
+### Features Implemented
+- [x] CSS Custom Properties (light and dark mode color schemes)
+- [x] Flexbox (navigation and form layouts)
+- [x] CSS Grid (project cards with responsive columns)
+- [x] Media Queries (mobile-first with 4 breakpoints)
+- [x] Dark/Light Mode Toggle (with localStorage persistence)
+- [x] Responsive Hamburger Menu (with smooth animations)
+- [x] Smooth Scrolling & Transitions
+- [x] Semantic HTML5 Elements
+- [x] Form Validation & Accessibility
 
 ### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
+- [x] CSS Custom Properties (--color-*, --spacing-*, --font-*)
+- [x] Flexbox (navigation, footer, form layouts)
+- [x] CSS Grid (project cards: 1 col mobile → 2 col tablet → 3 col desktop)
+- [x] Media Queries (mobile < 768px, tablet ≥ 768px, desktop ≥ 1024px, large ≥ 1200px)
+- [x] Dark Mode with CSS Variables
+- [x] Smooth Transitions & Animations
+- [x] Hamburger Menu Toggle (CSS + JavaScript)
+- [x] Box Shadows & Color Gradients
+- [x] Pseudo-elements (::after for underline effects)
+
+### Sections Completed
+1. **Hero Section** - Full name, professional tagline, call-to-action button
+2. **About Section** - Professional bio (150+ words), profile image, 8 skills displayed as badges
+3. **Projects Section** - 3 project cards with titles, descriptions, and action links (images removed for clean layout)
+4. **Contact Section** - Contact form with name, email, subject, message fields and validation
+5. **Navigation** - Sticky header with logo, responsive menu, and dark mode toggle
+6. **Footer** - Copyright notice and social media links
+
+### Bonus Features (+5% Extra)
+- **Dark/Light Mode Toggle** (+3%) - Full dark mode implementation with localStorage persistence
+- **Responsive Hamburger Menu** (+2%) - Mobile-friendly navigation with smooth animations
 
 ### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
+Built a fully responsive portfolio website using modern CSS techniques without frameworks. Implemented a mobile-first approach with 4 responsive breakpoints. Used CSS Grid for project cards with responsive column layouts (1→2→3 columns) and Flexbox for navigation and form layouts. Added dark mode functionality using CSS custom properties that can be toggled via JavaScript and persisted in localStorage. Created an animated hamburger menu for mobile navigation that appears only on screens below 768px. Ensured all sections are accessible with proper heading hierarchy, form labels, and ARIA attributes. Removed project card images to maintain a clean, text-focused design.
 
 ### Credits
-[List any images, fonts, or resources used with attribution]
+- System font stack using -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto
+- Custom color scheme designed for professional appearance with light and dark modes
+- No external frameworks or libraries used (vanilla JavaScript for interactions)
 
 ---
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website showcasing my web development skills and projects">
+    <title>Portfolio - Chilesh Mulenga</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,23 +24,24 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
+        <nav class="nav container">
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Chilesh Mulenga</a>
             </div>
-            <ul class="nav__menu">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="nav__theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
         </nav>
     </header>
 
@@ -55,10 +56,9 @@
                  - Consider using Flexbox for layout
             -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Chilesh Mulenga</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Full-Stack Web Developer | Problem Solver | Tech Enthusiast
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -79,29 +79,22 @@
                 <div class="about__content">
                     <div class="about__image">
                         <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile.jpg" alt="Profile photo of Chilesh Mulenga">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            I am a passionate and dedicated full-stack web developer with a strong foundation in modern web technologies. With expertise in HTML5, CSS3, and JavaScript, I create responsive, user-friendly web applications that solve real-world problems. My background in computer science has given me a deep understanding of software design principles and best practices. I am committed to continuous learning and staying updated with the latest web development trends. When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and mentoring junior developers. My goal is to build web solutions that are not only functional but also aesthetically pleasing and accessible to all users.
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li>Web Accessibility</li>
+                            <li>Git & GitHub</li>
+                            <li>React</li>
+                            <li>Node.js</li>
                         </ul>
                     </div>
                 </div>
@@ -122,56 +115,33 @@
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Responsive Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A modern, fully responsive portfolio website built with HTML5, CSS3, and vanilla JavaScript. Features include a sticky navigation bar, smooth scrolling, mobile-first design, and CSS Grid layouts for optimal viewing on all devices.
                             </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
                         </div>
                     </article>
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Task Manager Application</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A dynamic task management application with add, edit, and delete functionality. Built using modern JavaScript with local storage persistence, allowing users to organize their daily tasks efficiently with a clean and intuitive interface.
                             </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
                         </div>
                     </article>
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Weather Dashboard</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                An interactive weather dashboard that fetches real-time weather data from a public API. Features include location search, current conditions display, multi-day forecasts, and a responsive design that works seamlessly on mobile and desktop devices.
                             </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
                         </div>
                     </article>
-
-                    <!-- TODO: Add more project cards if desired -->
                 </div>
             </div>
         </section>
@@ -248,7 +218,7 @@
              - Back to top link (optional)
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 Chilesh Mulenga. All rights reserved.</p>
             <nav class="footer__social">
                 <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
@@ -257,5 +227,50 @@
             </nav>
         </div>
     </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+        });
+
+        // Mobile Menu Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        navMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav')) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
